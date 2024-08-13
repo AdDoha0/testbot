@@ -5,11 +5,18 @@ from logging import basicConfig, INFO
 
 from confing import TOKEN
 from app.handlers.__init__ import setup_routes
+from app.data import database as db
+
 
 
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
+
+
+async def on_startup(_):
+    await db.
+
 
 
 async def main():
